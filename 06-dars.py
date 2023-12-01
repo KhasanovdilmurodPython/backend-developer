@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """
+<<<<<<< HEAD
 Created on Tue Nov 28 10:34:34 2023
 
 @author: User
@@ -58,7 +59,3 @@ for y in list1:
         print(f"{y} -  {menu[y]} so`m")
     else:
         print(f"Kechirasiz, bizda {y} yo`q ")
-    
-    
-    
-    
