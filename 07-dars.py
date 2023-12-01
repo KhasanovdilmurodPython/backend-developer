@@ -92,3 +92,34 @@ dasturchilar = {
 #     print(f"{ism.title()} quyidagi dasturlash tillarida dastur yoza oladi:")
 #     for til in tillar:
 #         print('-', til.upper())
+hamkasblar = {
+    'dilmurod': {
+        'familya':'xasanov',
+        'tyil': 1995,
+        'malumot':'oliy',
+        'tillar': ['php','python','sql']
+        },
+    'ravshan': {
+        'familya':'shirinboyev',
+        'tyil':1997,
+        'malumot':'oliy',
+        'tillar':['html','css','js']        
+        },
+    'maruf': {
+        'familya':'tojiyev',
+        'tyil': 1992,
+        'malumot': 'oliy',
+        'tillar':['python','c++','c#']
+        }
+    
+    }
+
+for ism, info in hamkasblar.items():
+    print(f" {ism.title()} {info['familya'].title()},"
+          f"{info['tyil']}-yilda tug'ilgan."
+          f"Ma'lumoti: {info['malumot'].title()}."
+          f" Quyidagi dasturlash tillarida dastur yoza oladi:"
+          
+          )
+    for til in info['tillar']:
+        print(f"-{til.upper()}")
