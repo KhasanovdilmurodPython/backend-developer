@@ -79,6 +79,16 @@ for gentra in gentras:
         gentra['narx'] = 15000
     else:
         gentra['narx'] = 13500
-for gentra in gentras:
-    print(gentra)
+# for gentra in gentras:
+#     print(gentra)
 
+dasturchilar = {
+    'ali': ['sql','c#','python'],
+    'g`ani': ['c++','python','javascript'],
+    'soli': ['sql','java','r'],
+    'chori':['golang','c++','c','c#']
+    }
+# for ism, tillar in dasturchilar.items():
+#     print(f"{ism.title()} quyidagi dasturlash tillarida dastur yoza oladi:")
+#     for til in tillar:
+#         print('-', til.upper())
