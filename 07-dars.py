@@ -44,8 +44,41 @@ car3 = {
 # car =car3
 # print(f"{car['model'].title()}, {car['yil']} - yil, {car['rang']} rang"  )
 cars = [car0,car1,car2,car3]
-for car in cars:
-    print(f"{car['model'].title()},"
-          f"{car['yil']}-yil,"
-          f"{car['rang']} rang")
+# for car in cars:
+#     print(f"{car['model'].title()},"
+#           f"{car['yil']}-yil,"
+#           f"{car['rang']} rang")
+gentras = []
+for n in range(10):
+    new_car = {
+            'model':"Gentra",
+            "rang":None,
+            "yil": 2020,
+            'narx':None,
+            "km": 0,
+            'karobka':"avtomat"
+            }
+    gentras.append(new_car)
+
+for gentra in gentras[:3]:
+    gentra['rang']='qizil'
+
+for gentra in gentras[3:6]:
+    gentra['rang']='qora'
+    
+# for gentra in gentras:
+#     print(gentra)
+for gentra in gentras[6:]:
+    gentra['rang']='qora'
+    gentra['karobka'] = 'mexanika'
+    
+# for gentra in gentras:
+#     print(gentra)  
+for gentra in gentras:
+    if gentra['karobka'] == 'avtomat':
+        gentra['narx'] = 15000
+    else:
+        gentra['narx'] = 13500
+for gentra in gentras:
+    print(gentra)
 
